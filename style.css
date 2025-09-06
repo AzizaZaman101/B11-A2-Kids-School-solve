@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin:0rem;
+    padding:0rem;
+    font-family: "Quicksand", sans-serif;
+}
+
 :root{
 
     --primary-yellow: #FEA301;
@@ -8,3 +17,125 @@
     --nav-violet: #5D58EF;
 }
 
+/*shared styles*/
+
+ul>li{
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+}
+
+.regular{
+    color: var(--primary-white);
+    border-radius: 12px;
+    border-style: none;
+    text-align: center;
+    padding: 0.8rem;
+    width: 12rem;
+    height: 3rem;
+    font-weight: 500;
+    font-size: 1.2;
+}
+
+.black{
+    background-color: var(--primary-black);
+}
+
+.background_pic{
+    background-image: url(./assets/bg.png);
+}
+
+
+
+/*Header styles*/
+
+.small_brand{
+    width:2.8rem;
+    height:2.8rem;
+}
+
+.main_logo{
+    display: flex;
+    align-items: center;
+}
+
+.brand_name{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color:var(--primary-black);
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    margin:0rem;
+}
+
+i.fa-bars{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem 0rem;
+}
+
+.contact{
+    background-color: var(--primary-yellow);
+}
+
+/*Hero sections*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 3.1rem;
+}
+
+
+/*Standard Curriculum*/
+
+
+
+/*Our Stories*/
+
+
+
+
+/*Footer Section*/
+
+footer{
+    display: flex;
+    background-color: var(--nav-blue);
+}
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 576px){
+
+   /*header*/
+   .navlinks{
+    display: none;
+   } 
+   .contact{
+    display: none;
+   }
+    
+   i.fa-bars{
+    display: flex;
+   }
+
+
+   /*Hero sections*/
+
+   .
+
+}
