@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 *{
-    margin:0rem;
+    margin: 0rem 0.1rem;
     padding:0rem;
     font-family: "Quicksand", sans-serif;
 }
@@ -16,6 +16,14 @@
     --nav-blue: #05D4DF;
     --nav-violet: #5D58EF;
 }
+.primary-yellow{
+    color:var(--primary-yellow);
+}
+.primary-blue{
+    color:var(--primary-blue);
+}
+
+
 
 /*shared styles*/
 
@@ -47,7 +55,11 @@ li>a{
     background-image: url(./assets/bg.png);
 }
 
-
+.second_heading{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
 
 /*Header styles*/
 
@@ -95,13 +107,45 @@ header{
 .hero{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 3.1rem;
+    padding-bottom: 2rem;;
+}
+
+.main_heading{
+    font-size: 2.2rem;
+}
+
+.description{
+    padding: 1.4rem 0rem;
 }
 
 
 /*Standard Curriculum*/
 
+.curriculum_cards{
+    padding: 4rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
 
+.card{
+    border-style: none;
+    border-radius: 18px;
+}
+
+.card-1{
+    background-image: linear-gradient(#DEF5FF,var(--primary-white));
+
+}
+
+.card_image{
+    width:;
+}
 
 /*Our Stories*/
 
@@ -122,6 +166,11 @@ footer{
 @media screen and (max-width: 576px){
 
    /*header*/
+
+   header{
+    border-bottom: 2px solid var(--primary-yellow);;
+   }
+
    .navlinks{
     display: none;
    } 
@@ -136,6 +185,13 @@ footer{
 
    /*Hero sections*/
 
-   .
+   .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+   }
+
+   .image{
+    width:100%;
+   }
 
 }
