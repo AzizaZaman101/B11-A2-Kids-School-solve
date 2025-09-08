@@ -61,6 +61,9 @@ li>a{
     font-weight: 600;
 }
 
+
+
+.third-heading,
 .card_heading{
     font-weight: 600;
     font-size: 1.2rem;
@@ -90,6 +93,19 @@ li>a{
     justify-content: center;
     gap:1.5rem;
     margin:0rem;
+}
+
+.navlink1{
+    color: var(--primary-yellow);
+}
+.navlink2{
+    color: var(--primary-blue);
+}
+.navlink3{
+    color: var(--nav-blue);
+}
+.navlink4{
+    color: var(--nav-violet);
 }
 
 i.fa-bars{
@@ -125,6 +141,9 @@ header{
     padding: 1.4rem 0rem;
 }
 
+.image{
+    width: 58%;
+}
 
 /*Standard Curriculum*/
 
@@ -261,12 +280,54 @@ i.fa-circle-chevron-left{
 /*Footer Section*/
 
 footer{
-    display: flex;
-    background-image: linear-gradient(var(--primary-white), #9fd1ed78 40%);
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    background-color: var(--nav-blue);
+    padding: 2rem;
+    gap: 1.5rem;
+
 }
 
 
+.brand-name{
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--primary-white);
+}
+
+.logo{
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
+.about-description{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--primary-white);
+
+}
+
+.footer-description{
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--primary-white);
+}    
+
+.brand,
+.media-icons{
+    display: flex;
+}
+
+.gap{
+    padding-bottom: 1rem;
+}
+
+.third-heading{
+    color:var(--primary-white);
+}
 
 /*media queries*/
 
@@ -321,5 +382,11 @@ footer{
 
    .story-card-1{
     display:none;
+   }
+
+
+   footer{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: start;
    }
 }
